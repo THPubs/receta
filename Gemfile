@@ -24,6 +24,8 @@ group :development, :test do
     gem 'better_errors'
     gem 'pry-rails'
     gem 'annotate', '2.6.5'
+    gem 'teaspoon', '0.9.1'
+    gem 'phantomjs'
 end
 
 gem 'foreman'
