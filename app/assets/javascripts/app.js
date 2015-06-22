@@ -35,11 +35,11 @@ controllers.controller("RecipesController", ['$scope', '$routeParams', '$locatio
     };
     if ($routeParams.keywords) {
         keywords = $routeParams.keywords.toLowerCase();
-        return $scope.recipes = recipes.filter(function(recipe) {
+        $scope.recipes = recipes.filter(function(recipe) {
             return recipe.name.toLowerCase().indexOf(keywords) !== -1;
         });
     } else {
-        return $scope.recipes = [];
+        $scope.recipes = [];
     }
 
 }]);
