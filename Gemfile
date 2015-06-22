@@ -24,3 +24,10 @@ group :development, :test do
     gem 'pry-rails'
     gem 'annotate', '2.6.5'
 end
+
+gem 'foreman'
+group :production, :staging do
+    gem 'rails_12factor'
+    gem 'rails_stdout_logging'
+    gem 'rails_serve_static_assets'
+end
